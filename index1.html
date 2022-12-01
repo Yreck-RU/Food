@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="/" class="header__logo">
+        <img src="images/logo.svg" alt="OFOOD_LLC">
+      </a>
+      <div class="header-menu header__header-menu">
+        <div class="header-menu__menu-btn js-btn-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="header-menu__drop">
+          <li class="header-menu__item">
+            <a href="/" class="header-menu__link">
+              Main menu
+            </a>
+          </li>
+          <li class="header-menu__item">
+            <a href="cart.html" class="header-menu__link">
+              Cart
+            </a>
+          </li>
+          <li class="header-menu__item">
+            <a href="/" class="header-menu__link">
+              OFood
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main class="main">
+        <section class="restaurant">
+            <div class="container">
+                <div class="restaurant__inner">
+                    <div class="restaurant__info">
+                        <div class="restaurant__logo">
+                            <img src="images/restaurant-logo.png" alt="Cali Comfort BBQ">
+                        </div>
+                        <h1 class="h1 restaurant__title">
+                            Cali Comfort BBQ - Spring Valley 8910 Troy St
+                        </h1>
+                        <div class="restaurant__address">
+                            8910 Troy Street, Spring Valley, CA
+                        </div>
+                        <div class="restaurant__tags">
+                            <div class="tag">
+                                Scheduled Orders Only
+                            </div>
+                        </div>
+                        <div class="restaurant__schedule">
+                            <span class="restaurant__schedule-text">
+                                Next Available: 4/12 at 12:00 GMT-7
+                            </span>
+                            <a href="#" class="link">
+                                More Info
+                            </a>
+                        </div>
+                        <div class="restaurant__menu">
+                            <a href="#" class="link">
+                                <svg class="link__icon" width="25" height="28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="images/svg-icons.svg#icon-pdf"></use>
+                                </svg>
+                                VIEW MENU
+                            </a>
+                        </div>
+                    </div>
+                    <div class="restaurant__image">
+                        <div class="restaurant__image-inner">
+                            <img src="images/restaurant-img.png" alt="Cali Comfort BBQ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="promo">
+            <div class="container">
+                <div class="promo__inner">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="images/promo-img-mobile.png">
+                        <img src="images/promo-img.png" alt="PROMO">
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-menu-main">
+            <div class="container">
+                <div class="section-menu-main__inner">
+                    <div class="tabs-style tabs-style_mb_60 section-menu__tabs js-tabs">
+                        <div class="tabs-style__outer">
+                            <div class="tabs-style__inner">
+                                <div class="tabs-style__item js-tab _active">
+                                    FeatureD
+                                </div>
+                                <div class="tabs-style__item js-tab">
+                                    Beer/Wine/Liquor
+                                </div>
+                                <div class="tabs-style__item js-tab">
+                                    Beverages
+                                </div>
+                                <div class="tabs-style__item js-tab">
+                                    Food
+                                </div>
+                                <div class="tabs-style__item js-tab">
+                                    Retail
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs-content">
+                        <div class="tab-content-style js-tab-content _active">
+                            <h2 class="h2 section-menu-main__title">
+                                Featured
+                            </h2>
+                            <div class="menu-list">
+                                <div class="card-item">
+  <a href="#" class="card-item__top">
+    <img src="images/card/card-img1.png" alt="Wicked Peach Cobbler" class="card-item__img">
+  </a>
+  <div class="card-item__content">
+    <h3 class="card-item__title">
+      <a href="#">
+        Wicked Peach Cobbler
+      </a>
+    </h3>
+    <div class="card-item__text">
+      Served with French Vanilla Ice Cream a la mode(in separate container).
+    </div>
+    <div class="card-item__btns">
+      <button class="btn btn-add-cart card-item__btn" data-modal="#modal-order">
+        <svg class="btn-add-cart__icon" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="images/svg-icons.svg#icon-cart"></use>
+        </svg>
+        <span class="btn-add-cart__text">
+          <span class="btn-add-cart__title">
+            ADD TO CART
+          </span>
+          <span class="btn-add-cart__price">
+            $9.00
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div><div class="card-item">
+  <a href="#" class="card-item__top">
+    <img src="images/card/card-img-dish.svg" alt="Wicked Peach Cobbler" class="card-item__img">
+  </a>
+  <div class="card-item__content">
+    <h3 class="card-item__title">
+      <a href="#">
+        Wicked Peach Cobbler
+      </a>
+    </h3>
+    <div class="card-item__text">
+      Served with French Vanilla Ice Cream a la mode(in separate container).
+    </div>
+    <div class="card-item__btns">
+      <button class="btn btn-add-cart card-item__btn" data-modal="#modal-order">
+        <svg class="btn-add-cart__icon" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="images/svg-icons.svg#icon-cart"></use>
+        </svg>
+        <span class="btn-add-cart__text">
+          <span class="btn-add-cart__title">
+            ADD TO CART
+          </span>
+          <span class="btn-add-cart__price">
+            $9.00
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div><div class="card-item">
+  <a href="#" class="card-item__top">
+    <img src="images/card/card-img3.png" alt="Rib Tips" class="card-item__img">
+  </a>
+  <div class="card-item__content">
+    <h3 class="card-item__title">
+      <a href="#">
+        Rib Tips
+      </a>
+    </h3>
+    <div class="card-item__text">
+      One pound serves 1-2 people.
+    </div>
+    <div class="card-item__btns">
+      <button class="btn btn-add-cart card-item__btn" data-modal="#modal-order">
+        <svg class="btn-add-cart__icon" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="images/svg-icons.svg#icon-cart"></use>
+        </svg>
+        <span class="btn-add-cart__text">
+          <span class="btn-add-cart__title">
+            ADD TO CART
+          </span>
+          <span class="btn-add-cart__price">
+            $9.00
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+                            </div>
+                        </div>
+                        <div class="tab-content-style js-tab-content">
+                            <h2 class="h2 section-menu-main__title">
+                                Beer/Wine/Liquor
+                            </h2>
+                            <div class="menu-list">
+                                <div class="card-item">
+  <a href="#" class="card-item__top">
+    <img src="images/card/card-img1.png" alt="Wicked Peach Cobbler" class="card-item__img">
+  </a>
+  <div class="card-item__content">
+    <h3 class="card-item__title">
+      <a href="#">
+        Wicked Peach Cobbler
+      </a>
+    </h3>
+    <div class="card-item__text">
+      Served with French Vanilla Ice Cream a la mode(in separate container).
+    </div>
+    <div class="card-item__btns">
+      <button class="btn btn-add-cart card-item__btn" data-modal="#modal-order">
+        <svg class="btn-add-cart__icon" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="images/svg-icons.svg#icon-cart"></use>
+        </svg>
+        <span class="btn-add-cart__text">
+          <span class="btn-add-cart__title">
+            ADD TO CART
+          </span>
+          <span class="btn-add-cart__price">
+            $9.00
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div><div class="card-item">
+  <a href="#" class="card-item__top">
+    <img src="images/card/card-img-glass.svg" alt="Wicked Peach Cobbler" class="card-item__img">
+  </a>
+  <div class="card-item__content">
+    <h3 class="card-item__title">
+      <a href="#">
+        Wicked Peach Cobbler
+      </a>
+    </h3>
+    <div class="card-item__text">
+      Served with French Vanilla Ice Cream a la mode(in separate container).
+    </div>
+    <div class="card-item__btns">
+      <button class="btn btn-add-cart card-item__btn" data-modal="#modal-order">
+        <svg class="btn-add-cart__icon" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="images/svg-icons.svg#icon-cart"></use>
+        </svg>
+        <span class="btn-add-cart__text">
+          <span class="btn-add-cart__title">
+            ADD TO CART
+          </span>
+          <span class="btn-add-cart__price">
+            $9.00
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div><div class="card-item">
+  <a href="#" class="card-item__top">
+    <img src="images/card/card-img3.png" alt="Rib Tips" class="card-item__img">
+  </a>
+  <div class="card-item__content">
+    <h3 class="card-item__title">
+      <a href="#">
+        Rib Tips
+      </a>
+    </h3>
+    <div class="card-item__text">
+      One pound serves 1-2 people.
+    </div>
+    <div class="card-item__btns">
+      <button class="btn btn-add-cart card-item__btn" data-modal="#modal-order">
+        <svg class="btn-add-cart__icon" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="images/svg-icons.svg#icon-cart"></use>
+        </svg>
+        <span class="btn-add-cart__text">
+          <span class="btn-add-cart__title">
+            ADD TO CART
+          </span>
+          <span class="btn-add-cart__price">
+            $9.00
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div><div class="card-item">
+  <a href="#" class="card-item__top">
+    <img src="images/card/card-img3.png" alt="Rib Tips" class="card-item__img">
+  </a>
+  <div class="card-item__content">
+    <h3 class="card-item__title">
+      <a href="#">
+        Rib Tips
+      </a>
+    </h3>
+    <div class="card-item__text">
+      One pound serves 1-2 people.
+    </div>
+    <div class="card-item__btns">
+      <button class="btn btn-add-cart card-item__btn" data-modal="#modal-order">
+        <svg class="btn-add-cart__icon" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="images/svg-icons.svg#icon-cart"></use>
+        </svg>
+        <span class="btn-add-cart__text">
+          <span class="btn-add-cart__title">
+            ADD TO CART
+          </span>
+          <span class="btn-add-cart__price">
+            $9.00
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+                            </div>
+                        </div>
+                        <div class="tab-content-style js-tab-content">
+                            <h2 class="h2 section-menu-main__title">
+                                Beverages
+                            </h2>
+                            <div class="menu-list">
+                                <div class="card-item">
+  <a href="#" class="card-item__top">
+    <img src="images/card/card-img1.png" alt="Wicked Peach Cobbler" class="card-item__img">
+  </a>
+  <div class="card-item__content">
+    <h3 class="card-item__title">
+      <a href="#">
+        Wicked Peach Cobbler
+      </a>
+    </h3>
+    <div class="card-item__text">
+      Served with French Vanilla Ice Cream a la mode(in separate container).
+    </div>
+    <div class="card-item__btns">
+      <button class="btn btn-add-cart card-item__btn" data-modal="#modal-order">
+        <svg class="btn-add-cart__icon" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="images/svg-icons.svg#icon-cart"></use>
+        </svg>
+        <span class="btn-add-cart__text">
+          <span class="btn-add-cart__title">
+            ADD TO CART
+          </span>
+          <span class="btn-add-cart__price">
+            $9.00
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div><div class="card-item">
+  <a href="#" class="card-item__top">
+    <img src="images/card/card-img3.png" alt="Rib Tips" class="card-item__img">
+  </a>
+  <div class="card-item__content">
+    <h3 class="card-item__title">
+      <a href="#">
+        Rib Tips
+      </a>
+    </h3>
+    <div class="card-item__text">
+      One pound serves 1-2 people.
+    </div>
+    <div class="card-item__btns">
+      <button class="btn btn-add-cart card-item__btn" data-modal="#modal-order">
+        <svg class="btn-add-cart__icon" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="images/svg-icons.svg#icon-cart"></use>
+        </svg>
+        <span class="btn-add-cart__text">
+          <span class="btn-add-cart__title">
+            ADD TO CART
+          </span>
+          <span class="btn-add-cart__price">
+            $9.00
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+                            </div>
+                        </div>
+                        <div class="tab-content-style js-tab-content">
+                            <h2 class="h2 section-menu-main__title">
+                                Food
+                            </h2>
+                            <div class="menu-list">
+                                <div class="card-item">
+  <a href="#" class="card-item__top">
+    <img src="images/card/card-img1.png" alt="Wicked Peach Cobbler" class="card-item__img">
+  </a>
+  <div class="card-item__content">
+    <h3 class="card-item__title">
+      <a href="#">
+        Wicked Peach Cobbler
+      </a>
+    </h3>
+    <div class="card-item__text">
+      Served with French Vanilla Ice Cream a la mode(in separate container).
+    </div>
+    <div class="card-item__btns">
+      <button class="btn btn-add-cart card-item__btn" data-modal="#modal-order">
+        <svg class="btn-add-cart__icon" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="images/svg-icons.svg#icon-cart"></use>
+        </svg>
+        <span class="btn-add-cart__text">
+          <span class="btn-add-cart__title">
+            ADD TO CART
+          </span>
+          <span class="btn-add-cart__price">
+            $9.00
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div><div class="card-item">
+  <a href="#" class="card-item__top">
+    <img src="images/card/card-img2.png" alt="Wicked Peach Cobbler" class="card-item__img">
+  </a>
+  <div class="card-item__content">
+    <h3 class="card-item__title">
+      <a href="#">
+        Wicked Peach Cobbler
+      </a>
+    </h3>
+    <div class="card-item__text">
+      Served with French Vanilla Ice Cream a la mode(in separate container).
+    </div>
+    <div class="card-item__btns">
+      <button class="btn btn-add-cart card-item__btn" data-modal="#modal-order">
+        <svg class="btn-add-cart__icon" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="images/svg-icons.svg#icon-cart"></use>
+        </svg>
+        <span class="btn-add-cart__text">
+          <span class="btn-add-cart__title">
+            ADD TO CART
+          </span>
+          <span class="btn-add-cart__price">
+            $9.00
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div><div class="card-item">
+  <a href="#" class="card-item__top">
+    <img src="images/card/card-img3.png" alt="Rib Tips" class="card-item__img">
+  </a>
+  <div class="card-item__content">
+    <h3 class="card-item__title">
+      <a href="#">
+        Rib Tips
+      </a>
+    </h3>
+    <div class="card-item__text">
+      One pound serves 1-2 people.
+    </div>
+    <div class="card-item__btns">
+      <button class="btn btn-add-cart card-item__btn" data-modal="#modal-order">
+        <svg class="btn-add-cart__icon" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="images/svg-icons.svg#icon-cart"></use>
+        </svg>
+        <span class="btn-add-cart__text">
+          <span class="btn-add-cart__title">
+            ADD TO CART
+          </span>
+          <span class="btn-add-cart__price">
+            $9.00
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div><div class="card-item">
+  <a href="#" class="card-item__top">
+    <img src="images/card/card-img2.png" alt="Wicked Peach Cobbler" class="card-item__img">
+  </a>
+  <div class="card-item__content">
+    <h3 class="card-item__title">
+      <a href="#">
+        Wicked Peach Cobbler
+      </a>
+    </h3>
+    <div class="card-item__text">
+      Served with French Vanilla Ice Cream a la mode(in separate container).
+    </div>
+    <div class="card-item__btns">
+      <button class="btn btn-add-cart card-item__btn" data-modal="#modal-order">
+        <svg class="btn-add-cart__icon" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="images/svg-icons.svg#icon-cart"></use>
+        </svg>
+        <span class="btn-add-cart__text">
+          <span class="btn-add-cart__title">
+            ADD TO CART
+          </span>
+          <span class="btn-add-cart__price">
+            $9.00
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+                            </div>
+                        </div>
+                        <div class="tab-content-style js-tab-content">
+                            <h2 class="h2 section-menu-main__title">
+                                Retail
+                            </h2>
+                            <div class="menu-list">
+                                <div class="card-item">
+  <a href="#" class="card-item__top">
+    <img src="images/card/card-img1.png" alt="Wicked Peach Cobbler" class="card-item__img">
+  </a>
+  <div class="card-item__content">
+    <h3 class="card-item__title">
+      <a href="#">
+        Wicked Peach Cobbler
+      </a>
+    </h3>
+    <div class="card-item__text">
+      Served with French Vanilla Ice Cream a la mode(in separate container).
+    </div>
+    <div class="card-item__btns">
+      <button class="btn btn-add-cart card-item__btn" data-modal="#modal-order">
+        <svg class="btn-add-cart__icon" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="images/svg-icons.svg#icon-cart"></use>
+        </svg>
+        <span class="btn-add-cart__text">
+          <span class="btn-add-cart__title">
+            ADD TO CART
+          </span>
+          <span class="btn-add-cart__price">
+            $9.00
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div><div class="card-item">
+  <a href="#" class="card-item__top">
+    <img src="images/card/card-img3.png" alt="Wicked Peach Cobbler" class="card-item__img">
+  </a>
+  <div class="card-item__content">
+    <h3 class="card-item__title">
+      <a href="#">
+        Wicked Peach Cobbler
+      </a>
+    </h3>
+    <div class="card-item__text">
+      Served with French Vanilla Ice Cream a la mode(in separate container).
+    </div>
+    <div class="card-item__btns">
+      <button class="btn btn-add-cart card-item__btn" data-modal="#modal-order">
+        <svg class="btn-add-cart__icon" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="images/svg-icons.svg#icon-cart"></use>
+        </svg>
+        <span class="btn-add-cart__text">
+          <span class="btn-add-cart__title">
+            ADD TO CART
+          </span>
+          <span class="btn-add-cart__price">
+            $9.00
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div><div class="card-item">
+  <a href="#" class="card-item__top">
+    <img src="images/card/card-img2.png" alt="Rib Tips" class="card-item__img">
+  </a>
+  <div class="card-item__content">
+    <h3 class="card-item__title">
+      <a href="#">
+        Rib Tips
+      </a>
+    </h3>
+    <div class="card-item__text">
+      One pound serves 1-2 people.
+    </div>
+    <div class="card-item__btns">
+      <button class="btn btn-add-cart card-item__btn" data-modal="#modal-order">
+        <svg class="btn-add-cart__icon" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="images/svg-icons.svg#icon-cart"></use>
+        </svg>
+        <span class="btn-add-cart__text">
+          <span class="btn-add-cart__title">
+            ADD TO CART
+          </span>
+          <span class="btn-add-cart__price">
+            $9.00
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div><div class="card-item">
+  <a href="#" class="card-item__top">
+    <img src="images/card/card-img1.png" alt="Wicked Peach Cobbler" class="card-item__img">
+  </a>
+  <div class="card-item__content">
+    <h3 class="card-item__title">
+      <a href="#">
+        Wicked Peach Cobbler
+      </a>
+    </h3>
+    <div class="card-item__text">
+      Served with French Vanilla Ice Cream a la mode(in separate container).
+    </div>
+    <div class="card-item__btns">
+      <button class="btn btn-add-cart card-item__btn" data-modal="#modal-order">
+        <svg class="btn-add-cart__icon" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="images/svg-icons.svg#icon-cart"></use>
+        </svg>
+        <span class="btn-add-cart__text">
+          <span class="btn-add-cart__title">
+            ADD TO CART
+          </span>
+          <span class="btn-add-cart__price">
+            $9.00
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-menu-drink">
+            <div class="container">
+                <div class="section-menu-drink__inner">
+                    <h2 class="h2 section-menu-drink__title">
+                        Beer/Wine/Liquor
+                    </h2>
+                    <div class="tabs-style tabs-style_mb_30 section-menu__tabs js-tabs">
+                        <div class="tabs-style__outer">
+                            <div class="tabs-style__inner">
+                                <div class="tabs-style__item js-tab _active">
+                                    Fishbowls
+                                </div>
+                                <div class="tabs-style__item js-tab">
+                                    Wine
+                                </div>
+                                <div class="tabs-style__item js-tab">
+                                    Growlers 32oz (growler included)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs-content">
+                        <div class="tab-content-style js-tab-content _active">
+                            <div class="menu-list">
+                                <div class="card-item">
+  <a href="#" class="card-item__top">
+    <img src="images/card/card-img1.png" alt="Wicked Peach Cobbler" class="card-item__img">
+  </a>
+  <div class="card-item__content">
+    <h3 class="card-item__title">
+      <a href="#">
+        Wicked Peach Cobbler
+      </a>
+    </h3>
+    <div class="card-item__text">
+      Served with French Vanilla Ice Cream a la mode(in separate container).
+    </div>
+    <div class="card-item__btns">
+      <button class="btn btn-add-cart card-item__btn" data-modal="#modal-order">
+        <svg class="btn-add-cart__icon" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="images/svg-icons.svg#icon-cart"></use>
+        </svg>
+        <span class="btn-add-cart__text">
+          <span class="btn-add-cart__title">
+            ADD TO CART
+          </span>
+          <span class="btn-add-cart__price">
+            $9.00
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div><div class="card-item">
+  <a href="#" class="card-item__top">
+    <img src="images/card/card-img-glass.svg" alt="Wicked Peach Cobbler" class="card-item__img">
+  </a>
+  <div class="card-item__content">
+    <h3 class="card-item__title">
+      <a href="#">
+        Wicked Peach Cobbler
+      </a>
+    </h3>
+    <div class="card-item__text">
+      Served with French Vanilla Ice Cream a la mode(in separate container).
+    </div>
+    <div class="card-item__btns">
+      <button class="btn btn-add-cart card-item__btn" data-modal="#modal-order">
+        <svg class="btn-add-cart__icon" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="images/svg-icons.svg#icon-cart"></use>
+        </svg>
+        <span class="btn-add-cart__text">
+          <span class="btn-add-cart__title">
+            ADD TO CART
+          </span>
+          <span class="btn-add-cart__price">
+            $9.00
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div><div class="card-item">
+  <a href="#" class="card-item__top">
+    <img src="images/card/card-img3.png" alt="Rib Tips" class="card-item__img">
+  </a>
+  <div class="card-item__content">
+    <h3 class="card-item__title">
+      <a href="#">
+        Rib Tips
+      </a>
+    </h3>
+    <div class="card-item__text">
+      One pound serves 1-2 people.
+    </div>
+    <div class="card-item__btns">
+      <button class="btn btn-add-cart card-item__btn" data-modal="#modal-order">
+        <svg class="btn-add-cart__icon" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="images/svg-icons.svg#icon-cart"></use>
+        </svg>
+        <span class="btn-add-cart__text">
+          <span class="btn-add-cart__title">
+            ADD TO CART
+          </span>
+          <span class="btn-add-cart__price">
+            $9.00
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div><div class="card-item">
+  <a href="#" class="card-item__top">
+    <img src="images/card/card-img2.png" alt="Wicked Peach Cobbler" class="card-item__img">
+  </a>
+  <div class="card-item__content">
+    <h3 class="card-item__title">
+      <a href="#">
+        Wicked Peach Cobbler
+      </a>
+    </h3>
+    <div class="card-item__text">
+      Served with French Vanilla Ice Cream a la mode(in separate container).
+    </div>
+    <div class="card-item__btns">
+      <button class="btn btn-add-cart card-item__btn" data-modal="#modal-order">
+        <svg class="btn-add-cart__icon" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="images/svg-icons.svg#icon-cart"></use>
+        </svg>
+        <span class="btn-add-cart__text">
+          <span class="btn-add-cart__title">
+            ADD TO CART
+          </span>
+          <span class="btn-add-cart__price">
+            $9.00
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+                            </div>
+                        </div>
+                        <div class="tab-content-style js-tab-content">
+                            <div class="menu-list">
+                                <div class="card-item">
+  <a href="#" class="card-item__top">
+    <img src="images/card/card-img1.png" alt="Wicked Peach Cobbler" class="card-item__img">
+  </a>
+  <div class="card-item__content">
+    <h3 class="card-item__title">
+      <a href="#">
+        Wicked Peach Cobbler
+      </a>
+    </h3>
+    <div class="card-item__text">
+      Served with French Vanilla Ice Cream a la mode(in separate container).
+    </div>
+    <div class="card-item__btns">
+      <button class="btn btn-add-cart card-item__btn" data-modal="#modal-order">
+        <svg class="btn-add-cart__icon" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="images/svg-icons.svg#icon-cart"></use>
+        </svg>
+        <span class="btn-add-cart__text">
+          <span class="btn-add-cart__title">
+            ADD TO CART
+          </span>
+          <span class="btn-add-cart__price">
+            $9.00
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div><div class="card-item">
+  <a href="#" class="card-item__top">
+    <img src="images/card/card-img-glass.svg" alt="Wicked Peach Cobbler" class="card-item__img">
+  </a>
+  <div class="card-item__content">
+    <h3 class="card-item__title">
+      <a href="#">
+        Wicked Peach Cobbler
+      </a>
+    </h3>
+    <div class="card-item__text">
+      Served with French Vanilla Ice Cream a la mode(in separate container).
+    </div>
+    <div class="card-item__btns">
+      <button class="btn btn-add-cart card-item__btn" data-modal="#modal-order">
+        <svg class="btn-add-cart__icon" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="images/svg-icons.svg#icon-cart"></use>
+        </svg>
+        <span class="btn-add-cart__text">
+          <span class="btn-add-cart__title">
+            ADD TO CART
+          </span>
+          <span class="btn-add-cart__price">
+            $9.00
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div><div class="card-item">
+  <a href="#" class="card-item__top">
+    <img src="images/card/card-img3.png" alt="Rib Tips" class="card-item__img">
+  </a>
+  <div class="card-item__content">
+    <h3 class="card-item__title">
+      <a href="#">
+        Rib Tips
+      </a>
+    </h3>
+    <div class="card-item__text">
+      One pound serves 1-2 people.
+    </div>
+    <div class="card-item__btns">
+      <button class="btn btn-add-cart card-item__btn" data-modal="#modal-order">
+        <svg class="btn-add-cart__icon" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="images/svg-icons.svg#icon-cart"></use>
+        </svg>
+        <span class="btn-add-cart__text">
+          <span class="btn-add-cart__title">
+            ADD TO CART
+          </span>
+          <span class="btn-add-cart__price">
+            $9.00
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+                            </div>
+                        </div>
+                        <div class="tab-content-style js-tab-content">
+                            <div class="menu-list">
+                                <div class="card-item">
+  <a href="#" class="card-item__top">
+    <img src="images/card/card-img3.png" alt="Rib Tips" class="card-item__img">
+  </a>
+  <div class="card-item__content">
+    <h3 class="card-item__title">
+      <a href="#">
+        Rib Tips
+      </a>
+    </h3>
+    <div class="card-item__text">
+      One pound serves 1-2 people.
+    </div>
+    <div class="card-item__btns">
+      <button class="btn btn-add-cart card-item__btn" data-modal="#modal-order">
+        <svg class="btn-add-cart__icon" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="images/svg-icons.svg#icon-cart"></use>
+        </svg>
+        <span class="btn-add-cart__text">
+          <span class="btn-add-cart__title">
+            ADD TO CART
+          </span>
+          <span class="btn-add-cart__price">
+            $9.00
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div><div class="card-item">
+  <a href="#" class="card-item__top">
+    <img src="images/card/card-img1.png" alt="Wicked Peach Cobbler" class="card-item__img">
+  </a>
+  <div class="card-item__content">
+    <h3 class="card-item__title">
+      <a href="#">
+        Wicked Peach Cobbler
+      </a>
+    </h3>
+    <div class="card-item__text">
+      Served with French Vanilla Ice Cream a la mode(in separate container).
+    </div>
+    <div class="card-item__btns">
+      <button class="btn btn-add-cart card-item__btn" data-modal="#modal-order">
+        <svg class="btn-add-cart__icon" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="images/svg-icons.svg#icon-cart"></use>
+        </svg>
+        <span class="btn-add-cart__text">
+          <span class="btn-add-cart__title">
+            ADD TO CART
+          </span>
+          <span class="btn-add-cart__price">
+            $9.00
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div><div class="card-item">
+  <a href="#" class="card-item__top">
+    <img src="images/card/card-img-glass.svg" alt="Wicked Peach Cobbler" class="card-item__img">
+  </a>
+  <div class="card-item__content">
+    <h3 class="card-item__title">
+      <a href="#">
+        Wicked Peach Cobbler
+      </a>
+    </h3>
+    <div class="card-item__text">
+      Served with French Vanilla Ice Cream a la mode(in separate container).
+    </div>
+    <div class="card-item__btns">
+      <button class="btn btn-add-cart card-item__btn" data-modal="#modal-order">
+        <svg class="btn-add-cart__icon" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="images/svg-icons.svg#icon-cart"></use>
+        </svg>
+        <span class="btn-add-cart__text">
+          <span class="btn-add-cart__title">
+            ADD TO CART
+          </span>
+          <span class="btn-add-cart__price">
+            $9.00
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__logo">
+        <img src="images/logo.svg" alt="OFOOD_LLC">
+      </div>
+      <div class="footer__copy">
+        ©2022 all rights reserved
+      </div>
+    </div>
+  </div>
+</footer>
+    <div class="order-bar">
+  <div class="container">
+    <div class="order-bar__inner">
+      <div class="order-bar__info">
+        <div class="h3 order-bar__text">
+          Your Order
+        </div>
+        <div class="order-bar__values">
+          <span class="order-bar__count">
+            2 Items
+          </span>
+          <span class="order-bar__cost">
+            $18.00
+          </span>
+        </div>
+      </div>
+      <div class="order-bar__btns">
+        <a href="cart.html" class="btn btn_p_25 order-bar__btn order-bar__checkout">
+          <svg class="btn__icon" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="images/svg-icons.svg#icon-cart"></use>
+          </svg>
+          checkout
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="modal js-modal-hide" id="modal-order">
+    <div class="modal__outer">
+        <div class="modal__inner js-modal-hide">
+            <div class="modal__body">
+                <div class="modal-close modal__close js-modal-hide"></div>
+                <div class="modal__content modal-order">
+                    <div class="modal__title modal-order__title">
+                        Wicked Peach Cobbler
+                    </div>
+                    <div class="modal__text modal-order__text">
+                        Served with French Vanilla Ice Cream a la mode(in separate container).
+                    </div>
+                    <div class="modal-order__image">
+                        <img src="images/card/card-img1.png" alt="Wicked Peach Cobbler">
+                    </div>
+                    <div class="modal-order__items">
+                        <div class="modal-order-item modal-order__item _active">
+                            <div class="modal-order-item__head js-accordion-head">
+                                <div class="modal-order-item__title">
+                                    Cobbler Ice Cream
+                                </div>
+                                <svg class="modal-order-item__arrow" width="13" height="9" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="images/svg-icons.svg#chevron-down"></use>
+                                </svg>
+                            </div>
+                            <div class="modal-order-item__content">
+                                <div class="modal-order-item__text">
+                                    Please choose up to 1
+                                </div>
+                                <div class="modal-order-item__row">
+                                    <label class="radio-btn modal-order-item__radio-btn">
+                                        <input type="checkbox" class="radio-btn__input js-check-only-one" name="order-config"
+                                            autocomplete="off">
+                                        <span class="radio-btn__checkmark"></span>
+                                        Ice Cream
+                                    </label>
+                                </div>
+                                <div class="modal-order-item__row">
+                                    <label class="radio-btn modal-order-item__radio-btn">
+                                        <input type="checkbox" class="radio-btn__input js-check-only-one" name="order-config"
+                                            autocomplete="off">
+                                        <span class="radio-btn__checkmark"></span>
+                                        Ice Cream 2
+                                    </label>
+                                </div>
+                                <div class="modal-order-item__row">
+                                    <label class="radio-btn modal-order-item__radio-btn">
+                                        <input type="checkbox" class="radio-btn__input js-check-only-one" name="order-config"
+                                            autocomplete="off">
+                                        <span class="radio-btn__checkmark"></span>
+                                        Ice Cream 3
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-instructions modal-order__instructions">
+                        <div class="order-instructions__title">
+                            Special Instructions
+                        </div>
+                        <div class="order-instructions__text">
+                            200 characters or fewer
+                        </div>
+                        <textarea class="input-style order-instructions__textarea" maxlength="200"
+                            placeholder="If you would like to add or substitute&#10;items please visit our “Siders Menu”"></textarea>
+                    </div>
+                    <div class="modal-order__footer">
+                        <div class="modal-order__counter">
+                            <div class="input-counter">
+                                <button class="input-counter__btn input-counter__btn_dec">
+                                    -
+                                </button>
+                                <input type="text" class="input-style input-counter__input-style" min="1" max="99"
+                                    value="1" autocomplete="off" data-price="9">
+                                <button class="input-counter__btn input-counter__btn_inc">
+                                    +
+                                </button>
+                            </div>
+                        </div>
+                        <button class="btn btn-add-order modal-order__btn js-modal-hide">
+                            <span class="btn-add-order__text">
+                                <span class="btn-add-order__title">
+                                    ADD TO CART
+                                </span>
+                                <span class="btn-add-order__price">
+                                    $9.00
+                                </span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="popup-wrapper">
+    <div id="popup-cart" class="popup">
+        <div class="popup__inner">
+            <svg class="popup__icon" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="images/svg-icons.svg#icon-check"></use>
+            </svg>
+            Item added to your cart
+        </div>
+    </div>
+    <div id="popup-cart2" class="popup">
+        <div class="popup__inner">
+            <svg class="popup__icon" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="images/svg-icons.svg#icon-check"></use>
+            </svg>
+            Item added to your cart
+        </div>
+    </div>
+</div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
