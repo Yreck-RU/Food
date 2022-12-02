@@ -218,7 +218,9 @@ document.addEventListener("DOMContentLoaded", function () {
       calcCartCost();
     })
   })
-  //Мои писания===================
+
+
+  //Add a Tip=========================================================================================================================
 
   let orderAddTipButtons = document.querySelectorAll('.order-add-tip__button');
   let orderAddTipInput = document.querySelector('._order-add-tip__input');
@@ -234,18 +236,11 @@ document.addEventListener("DOMContentLoaded", function () {
                   orderAddTipInput.value = "";
               }
             }
-            /*if(orderAddTipButton.classList.contains('order-add-tip__button_input') && orderAddTipButton.value) {
-              
-            } else if (!orderAddTipButton.classList.contains('order-add-tip__button_input')) {
-              orderAddTipButton.classList.add('_active');
-            }*/
             orderAddTipButton.classList.add('_active');
-            //alert(tipCalculation());
             calcCartCost();
         });
       }
       orderAddTipInput.addEventListener('focusout', function (event) { 
-      // Здесь можно написать код, который должен будет выполняться при снятии фокуса с формы 
           if (!orderAddTipInput.value) {
               orderAddTipButtons[0].classList.add('_active');
               let orderAddTipInputWrapper = document.querySelector('.order-add-tip__button_input');
@@ -254,18 +249,20 @@ document.addEventListener("DOMContentLoaded", function () {
               calcCartCost();
           } else if (orderAddTipInput.value) {
               let orderAddTipInputNumber = +orderAddTipInput.value;
-              //alert(orderAddTipInputNumber);
               let orderAddTipInputWrapper = document.querySelector('.order-add-tip__button_input');
               if (!orderAddTipInputWrapper.classList.contains('_active')) {
                   orderAddTipInput.value = "";
-              } else if (orderAddTipInputNumber > 100) {
-                  orderAddTipInput.value = 100;
+              } else if (orderAddTipInputNumber > 10000) {
+                  orderAddTipInput.value = 10000;
               } else if (orderAddTipInputNumber < 1) {
-                  orderAddTipInput.value = 1;
+                  //orderAddTipInput.value = 1;
+                  orderAddTipButtons[0].classList.add('_active');
+                  let orderAddTipInputWrapper = document.querySelector('.order-add-tip__button_input');
+                  orderAddTipInputWrapper.classList.remove('_active');
+                  orderAddTipInput.value = "";
+                  calcCartCost();
               }
               calcCartCost();
-              //alert(orderAddTipInput.value);
-              //alert(orderAddTipInputNumber);
           }
       });
   }
@@ -276,10 +273,10 @@ document.addEventListener("DOMContentLoaded", function () {
       for (let i = 0; i < orderAddTipButtons.length; i++) {
         if (orderAddTipButtons[i].classList.contains('_active')) {
           if (orderAddTipButtons[i].classList.contains('order-add-tip__button_input')) {
-            //alert("k");
             let orderAddTipButton = orderAddTipButtons[i];
             let orderAddTipValue = orderAddTipButton.querySelector('._order-add-tip__input').value;
-            return (1 + (+orderAddTipValue / 100));
+            //return (1 + (+orderAddTipValue / 100));
+            return +orderAddTipValue;
           } else {
             let orderAddTipButton = orderAddTipButtons[i];
             let orderAddTipValue = orderAddTipButton.querySelector('._order-add-tip__content').textContent;
@@ -294,9 +291,21 @@ document.addEventListener("DOMContentLoaded", function () {
       }
   }
 
+  const OrderAddTipButtonInput = document.querySelector('._order-add-tip__input');
+  if (OrderAddTipButtonInput) {
+    OrderAddTipButtonInput.addEventListener('input', function (event) {
+      let inputValue = OrderAddTipButtonInput.value;
+      console.log(inputValue);
+      if (inputValue < 0) {
+        OrderAddTipButtonInput.value = 1;
+      } else if (inputValue > 10000) {
+        OrderAddTipButtonInput.value = 10000;
+      } 
+      calcCartCost();
+    });
+  }
 
-
-  //==============================
+  //Add a Tip ===================================================================================================
 
   //initialize price calculation on page load (calc.html) 
   if (document.querySelector('.js-calc-cart')) {
@@ -318,14 +327,28 @@ document.addEventListener("DOMContentLoaded", function () {
       priceField.textContent = '$' + productCost.toFixed(2);
     })
     let tax = subTotal * taxRate;
-    let total = (subTotal * tipCalculation()) + tax;
+    let total;
+    if (document.querySelector('.order-add-tip__button_input').classList.contains('_active')) {
+      total = subTotal + tax + tipCalculation();
+    } else {
+      total = (subTotal * tipCalculation()) + tax;
+    }
 
     let taxField = document.querySelector('.js-calc-cart .order-table__tax-value');
     let subTotalField = document.querySelector('.js-calc-cart .order-table__total-value');
     let productPriceBtn = document.querySelector('.js-calc-cart .btn-checkout__price');
 
     taxField.textContent = '$' + tax.toFixed(2);
-    subTotalField.textContent = '$' + (subTotal.toFixed(2) * tipCalculation()).toFixed(2);
+    if (document.querySelector('.order-add-tip__button_input').classList.contains('_active')) {
+      subTotalField.textContent = '$' + (subTotal + tipCalculation()).toFixed(2);
+    } else {
+      subTotalField.textContent = '$' + (subTotal.toFixed(2) * tipCalculation()).toFixed(2);
+    }
+    if (document.querySelector('.order-add-tip__price') && document.querySelector('.order-add-tip__button_input').classList.contains('_active')) {
+      document.querySelector('.order-add-tip__price').textContent = '$' + tipCalculation().toFixed(2);
+    } else if (document.querySelector('.order-add-tip__price')) {
+      document.querySelector('.order-add-tip__price').textContent = '$' + (subTotal.toFixed(2) * tipCalculation() - subTotal.toFixed(2)).toFixed(2);
+    }
     productPriceBtn.textContent = '$' + total.toFixed(2);
   };
 

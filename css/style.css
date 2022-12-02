@@ -2502,7 +2502,6 @@ a.card-item__top .card-item__img:hover {
 
 /*Add a Tip - "Start"*/
 
-.order-table__counter {}
 .order-add-tip__wrapper {
   font-size: 0;
   display: flex;
@@ -2511,18 +2510,11 @@ a.card-item__top .card-item__img:hover {
 .order-add-tip__button {
   flex: 0 0 84px;
   height: 42px;
-  /*border: 1px solid rgba(80, 108, 255, 1);*/
   border: 1px solid rgba(196, 196, 196, 1);
   position: relative;
   margin-left: 12px;
   border-radius: 6px;
-  /*overflow: hidden;*/
   transition: all 0.2s ease 0s;
-
-  /*display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;*/
   cursor: pointer;
 }
 .order-add-tip__button._active {
@@ -2538,7 +2530,6 @@ a.card-item__top .card-item__img:hover {
   letter-spacing: 0em;
   text-align: center;
   color: rgba(19, 19, 19, 1);
-  /*position: relative;*/
   z-index: 10;
   pointer-events: none;
   transition: all 0.1s ease 0s;
@@ -2550,15 +2541,11 @@ a.card-item__top .card-item__img:hover {
   width: 100%;
 
 }
-.order-add-tip__button_front {}
 .order-add-tip__button_input {
   border: none !important;
 }
 .order-add-tip__button_input input{
   position: relative;
-  /*top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);*/
   width: 100%;
   height: 100%;
   outline:none;
@@ -2575,7 +2562,7 @@ a.card-item__top .card-item__img:hover {
   color: rgba(19, 19, 19, 1);
   transition: all 0.2s ease 0s;
 }
-.order-add-tip__button_input-decor {
+/*.order-add-tip__button_input-decor {
   font-family: inherit;
   font-size: 18px;
   font-weight: 400;
@@ -2590,7 +2577,7 @@ a.card-item__top .card-item__img:hover {
   pointer-events: none;
   opacity: 0;
   transition: all 0.2s ease 0s;
-}
+}*/
 .order-add-tip__button_input._active{
   border: none!important ;
   opacity: 1 !important;
@@ -2607,7 +2594,6 @@ a.card-item__top .card-item__img:hover {
   opacity: 0;
 }
 .order-add-tip__button_input input:focus{
-  /*border: 1px solid #fff !important;*/
   box-shadow: none;
 }
 
